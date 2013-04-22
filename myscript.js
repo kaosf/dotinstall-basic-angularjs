@@ -10,3 +10,9 @@ var mainCtrl = function($scope) {
     {"name": "yanagi", "score": 72.2}
   ];
 }
+
+var userItemCtrl = function($scope) {
+  $scope.increment = function() {
+    $scope.user.score++;
+  }
+}
