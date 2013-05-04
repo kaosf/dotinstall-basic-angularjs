@@ -14,6 +14,10 @@
   <p>Color:
   <select ng-model="user.color" ng-options="'label:' + color for color in ['red', 'blue', 'pink']" ng-init="user.color='red'"></select>
   </p>
+  <input type="text" ng-model="x"><br>
+  <input type="text" ng-model="y"><br>
+  <p>{{x + y}}</p>
+  <p>{{toInteger(x, 10) + toInteger(y, 10)}}</p>
   <p><input type="submit" value="add"></p>
   </form>
   <pre>{{user|json}}</pre>
